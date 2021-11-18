@@ -1,0 +1,47 @@
+<!--2172025 Morel M.C.A-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let angka1=prompt("Angka1");
+        let angka2=prompt("Angka2");
+        let ope=prompt("+,-,*,/,^");
+        let hasil1=parseInt(angka1) + parseInt(angka2);
+        let hasil2=parseInt(angka1) - parseInt(angka2);
+        let hasil3=parseInt(angka1) * parseInt(angka2);
+        let hasil4=parseInt(angka1) / parseInt(angka2);
+        let hasil5=parseInt(angka1) ** parseInt(angka2);
+
+        document.write("<h1>");
+
+        document.write("Angka1: " + angka1 + "</br>");
+        document.write("Angka2: " + angka2 + "</br>");
+        document.write("Ope: " + ope + "</br>");
+/* Operator hasil */
+        if(ope == "+"){
+            document.write("Hasil: " + hasil1 + "</br>");
+        } else if(ope == "-"){
+            document.write("Hasil: " + hasil2 + "</br>");
+        
+        } else if(ope == "*"){
+            document.write("Hasil: " + hasil3 + "</br>");
+        }
+         else if(ope == "/"){
+            document.write("Hasil: " + hasil4 + "</br>");
+        }
+         else if(ope == "^"){
+            document.write("Hasil: " + hasil5 + "</br>");
+        }
+         else {
+            document.write("Operator Salah, Masukkan Lagi" + "</br>");
+        }
+        </script>
+        <a href="index.html">Ulang</a>
+</body>
+</html>
